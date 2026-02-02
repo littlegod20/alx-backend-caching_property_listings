@@ -21,4 +21,4 @@ def property_list(request):
         }
         for prop in properties
     ]
-    return JsonResponse(properties_data, safe=False)
+    return JsonResponse({'properties': properties_data})
